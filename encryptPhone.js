@@ -6,3 +6,19 @@
 
 
 module.exports = encryptPhoneNumber;
+
+function phoneHash (str){
+
+    let lastFour = str.slice(8,12);
+  
+    let stars = "***-***-";
+  
+    
+  
+    return stars + lastFour;
+  
+}
+  
+console.log(phoneHash("111-222-3333"));
+
+
